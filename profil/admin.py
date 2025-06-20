@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .models import Barang, Jenis
+from .models import Barang, Jenis, About
 
 class BarangAdmin(admin.ModelAdmin):
     list_display = ('kdbrg','nama','stok','harga','link_gbr','tgl_input','id_jenis')
@@ -13,3 +13,4 @@ class BarangAdmin(admin.ModelAdmin):
 
 admin.site.register(Barang, BarangAdmin)
 admin.site.register(Jenis)
+admin.site.register(About)
