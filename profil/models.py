@@ -28,6 +28,8 @@ class About(models.Model):
     judul = models.CharField(max_length=200)
     isi = models.TextField()
     image = models.ImageField(upload_to='', blank=True)
+    image2 = models.ImageField(upload_to= '', blank=True)
 
     def __str__(self):
         return self.judul
+    
